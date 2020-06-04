@@ -22,12 +22,15 @@ public class GameManager : MonoBehaviour
             menu_set.SetActive(false);
         else
             menu_set.SetActive(true);
+
+        if (PlayerMove.is_engaged_enemy && !PlayerBattle.is_battled)
+            SceneManager.LoadScene("Stage1");
     }
 
     public void PressStart()
     {
         stage_number += 1;
-        SceneManager.LoadScene("stage"+stage_number.ToString());
+        SceneManager.LoadScene("Move");
     }
     public void PressExit()
     {

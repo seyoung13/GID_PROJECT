@@ -7,24 +7,23 @@ using UnityEngine.EventSystems;
 public class Caster : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
     private GameObject player;
+    private Actions player_action;
     private Vector2 player_pos;
-    private Vector2 default_pos;
+    static public bool is_active = false, is_mousebutton_down = false;
 
     void Start()
     {
         player = GameObject.Find("Player");
         player_pos = player.transform.position;
         this.transform.position = Camera.main.WorldToScreenPoint(player_pos);
-    }
-
-    void Update()
-    {
-
+        player_action = GameObject.Find("Actions").GetComponent<Actions>();
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        default_pos = this.transform.position;
+        Debug.Log("캐스터 드래그 시작");
+        is_active = true;
+        is_mousebutton_down = true;
     } 
 
     public void OnDrag(PointerEventData eventData)
@@ -35,6 +34,29 @@ public class Caster : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHa
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        this.transform.position = default_pos;
+        this.transform.position = Camera.main.WorldToScreenPoint(player_pos);
+        is_mousebutton_down = false;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.gameObject.tag == "Action")
+        {
+            Debug.Log(collider.gameObject.name.ToString()+"준비");
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collider)
+    {
+        if(!is_mousebutton_down)
+        {
+            if (collider.gameObject.tag == "Action")
+            {
+                Debug.Log(collider.gameObject.name.ToString() + "시전");
+                //player_action.SetActionName(collider.gameObject.name);
+            }
+
+            is_active = false;
+        }
     }
 }
