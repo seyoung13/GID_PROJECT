@@ -1,0 +1,401 @@
+fileFormatVersion: 2
+guid: 16ccc4c5c143d1a4b888d18d56a60e78
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8397913239759947884
+    second: magic-circle_menu_anima_0
+  - first:
+      213: -7070929702564430847
+    second: magic-circle_menu_anima_1
+  - first:
+      213: -2707482599384057786
+    second: magic-circle_menu_anima_2
+  - first:
+      213: -4804960872012623089
+    second: magic-circle_menu_anima_3
+  - first:
+      213: -4299569702380934743
+    second: magic-circle_menu_anima_4
+  - first:
+      213: 1984418837051784830
+    second: magic-circle_menu_anima_5
+  - first:
+      213: -7988684280347247364
+    second: magic-circle_menu_anima_6
+  - first:
+      213: 448894721014659566
+    second: magic-circle_menu_anima_7
+  - first:
+      213: 6787019387108229677
+    second: magic-circle_menu_anima_8
+  - first:
+      213: 1412075791354152749
+    second: magic-circle_menu_anima_9
+  - first:
+      213: -3822945254873262249
+    second: magic-circle_menu_anima_10
+  - first:
+      213: -5184781969106272970
+    second: magic-circle_menu_anima_11
+  - first:
+      213: -2115000966129190985
+    second: magic-circle_menu_anima_12
+  - first:
+      213: 4857333762173149074
+    second: magic-circle_menu_anima_13
+  - first:
+      213: -4828519182373410806
+    second: magic-circle_menu_anima_14
+  - first:
+      213: -8278406762723345124
+    second: magic-circle_menu_anima_15
+  - first:
+      213: 8038835724497326517
+    second: magic-circle_menu_anima_16
+  - first:
+      213: -1780883010031338364
+    second: magic-circle_menu_anima_17
+  - first:
+      213: 2683459014058236364
+    second: magic-circle_menu_anima_18
+  - first:
+      213: 7411496541766816475
+    second: magic-circle_menu_anima_19
+  - first:
+      213: -1391632850101444022
+    second: magic-circle_menu_anima_20
+  - first:
+      213: -6312654325011296163
+    second: magic-circle_menu_anima_21
+  - first:
+      213: 4741526458219079317
+    second: magic-circle_menu_anima_22
+  - first:
+      213: 7066294194022724554
+    second: magic-circle_menu_anima_23
+  - first:
+      213: -1424008938545800390
+    second: magic-circle_menu_anima_24
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: magic-circle_menu_anima_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 659
+        height: 660
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c680176f8916b8470800000000000000
+      internalID: 8397913239759947884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_anima_1
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 0
+        width: 659
+        height: 660
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10c73ee16e20fdd90800000000000000
+      internalID: -7070929702564430847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_anima_2
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 0
+        width: 659
+        height: 660
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6487924bbe61d6ad0800000000000000
+      internalID: -2707482599384057786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_anima_3
+      rect:
+        serializedVersion: 2
+        x: 1980
+        y: 0
+        width: 659
+        height: 660
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0359007b89515db0800000000000000
+      internalID: -4804960872012623089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_anima_4
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 0
+        width: 659
+        height: 660
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a96d82c22cd454c0800000000000000
+      internalID: -4299569702380934743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_anima_5
+      rect:
+        serializedVersion: 2
+        x: 3300
+        y: 0
+        width: 659
+        height: 660
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7eb01c1b621a8b10800000000000000
+      internalID: 1984418837051784830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_anima_6
+      rect:
+        serializedVersion: 2
+        x: 3960
+        y: 0
+        width: 659
+        height: 660
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfcb72f09fd722190800000000000000
+      internalID: -7988684280347247364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_anima_7
+      rect:
+        serializedVersion: 2
+        x: 4620
+        y: 0
+        width: 659
+        height: 660
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee970a3de5bca3600800000000000000
+      internalID: 448894721014659566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_anima_8
+      rect:
+        serializedVersion: 2
+        x: 5280
+        y: 0
+        width: 659
+        height: 660
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2286446c26503e50800000000000000
+      internalID: 6787019387108229677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_anima_9
+      rect:
+        serializedVersion: 2
+        x: 5940
+        y: 0
+        width: 659
+        height: 660
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d27c7936373b89310800000000000000
+      internalID: 1412075791354152749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
