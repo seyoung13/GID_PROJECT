@@ -5,10 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
 //마우스 드래그 반응을 살피기 위해 만든 스크립트
-<<<<<<< HEAD
-=======
 //노란 사각형을 캐스터라 명명
->>>>>>> dfb7641da86f4f7ff78aa9ab2597fbfaa9888b7b
 public class Caster : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
     private GameObject player;

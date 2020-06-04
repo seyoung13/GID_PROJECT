@@ -35,10 +35,7 @@ public class Actions : MonoBehaviour
     {   
         //플레이어 중심으로 액션 이미지 배치
         //굳이 math 연산까지 할 필요는 없을 것 같아 절대값으로 작성 - 이세영
-<<<<<<< HEAD
         action_menu.transform.position = Camera.main.WorldToScreenPoint(player_pos + new Vector2(0.0f, 0.0f));
-=======
->>>>>>> dfb7641da86f4f7ff78aa9ab2597fbfaa9888b7b
         skill1.transform.position = Camera.main.WorldToScreenPoint(player_pos + new Vector2(0.0f, 1.5f));
         skill2.transform.position = Camera.main.WorldToScreenPoint(player_pos + new Vector2(1.4f, 0.2f));
         skill3.transform.position = Camera.main.WorldToScreenPoint(player_pos + new Vector2(0.8f, -1.4f));
