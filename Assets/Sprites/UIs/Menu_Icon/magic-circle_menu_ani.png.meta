@@ -1,0 +1,1316 @@
+fileFormatVersion: 2
+guid: adfb13dd65979984fbe7fcf07eafabef
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4180298318054145490
+    second: magic-circle_menu_ani_0
+  - first:
+      213: 4190968740273641620
+    second: magic-circle_menu_ani_1
+  - first:
+      213: 3065963254242292150
+    second: magic-circle_menu_ani_2
+  - first:
+      213: 1659327595211112761
+    second: magic-circle_menu_ani_3
+  - first:
+      213: 4343069575278876301
+    second: magic-circle_menu_ani_4
+  - first:
+      213: -3617102080277157208
+    second: magic-circle_menu_ani_5
+  - first:
+      213: 8674553697977848307
+    second: magic-circle_menu_ani_6
+  - first:
+      213: 8931167981118346703
+    second: magic-circle_menu_ani_7
+  - first:
+      213: -2940886137775141903
+    second: magic-circle_menu_ani_8
+  - first:
+      213: -7463319529748270449
+    second: magic-circle_menu_ani_9
+  - first:
+      213: -7101337130894119715
+    second: magic-circle_menu_ani_10
+  - first:
+      213: -363877594683053285
+    second: magic-circle_menu_ani_11
+  - first:
+      213: 1563235904995662160
+    second: magic-circle_menu_ani_12
+  - first:
+      213: -6174954261148977162
+    second: magic-circle_menu_ani_13
+  - first:
+      213: 2931808576534778143
+    second: magic-circle_menu_ani_14
+  - first:
+      213: 4592564396290058394
+    second: magic-circle_menu_ani_15
+  - first:
+      213: -4084807948598607061
+    second: magic-circle_menu_ani_16
+  - first:
+      213: 3026207427814235654
+    second: magic-circle_menu_ani_17
+  - first:
+      213: 8550100020308232000
+    second: magic-circle_menu_ani_18
+  - first:
+      213: -2869252525482983357
+    second: magic-circle_menu_ani_19
+  - first:
+      213: 3241672444503666870
+    second: magic-circle_menu_ani_20
+  - first:
+      213: 3461803815014549918
+    second: magic-circle_menu_ani_21
+  - first:
+      213: 7813550100128269648
+    second: magic-circle_menu_ani_22
+  - first:
+      213: -213590382999562572
+    second: magic-circle_menu_ani_23
+  - first:
+      213: -8961288363394072363
+    second: magic-circle_menu_ani_24
+  - first:
+      213: -8588445785324521594
+    second: magic-circle_menu_ani_25
+  - first:
+      213: -1923061456562812935
+    second: magic-circle_menu_ani_26
+  - first:
+      213: 8216859738311723701
+    second: magic-circle_menu_ani_27
+  - first:
+      213: -277589032975094576
+    second: magic-circle_menu_ani_28
+  - first:
+      213: 3595240629062402079
+    second: magic-circle_menu_ani_29
+  - first:
+      213: 7151734888123014384
+    second: magic-circle_menu_ani_30
+  - first:
+      213: -5368025685988275542
+    second: magic-circle_menu_ani_31
+  - first:
+      213: -2059127917869053551
+    second: magic-circle_menu_ani_32
+  - first:
+      213: 9162228067877313929
+    second: magic-circle_menu_ani_33
+  - first:
+      213: -2378523725331466876
+    second: magic-circle_menu_ani_34
+  - first:
+      213: 6699151063419961870
+    second: magic-circle_menu_ani_35
+  - first:
+      213: -2130211975172169419
+    second: magic-circle_menu_ani_36
+  - first:
+      213: -8228813921517455294
+    second: magic-circle_menu_ani_37
+  - first:
+      213: 5165774836615013108
+    second: magic-circle_menu_ani_38
+  - first:
+      213: 8715736692563650908
+    second: magic-circle_menu_ani_39
+  - first:
+      213: -7814956986604727105
+    second: magic-circle_menu_ani_40
+  - first:
+      213: 235165694346922982
+    second: magic-circle_menu_ani_41
+  - first:
+      213: -3802494266514527927
+    second: magic-circle_menu_ani_42
+  - first:
+      213: -6772627981361457798
+    second: magic-circle_menu_ani_43
+  - first:
+      213: -8736869901769695706
+    second: magic-circle_menu_ani_44
+  - first:
+      213: 1495333790124628452
+    second: magic-circle_menu_ani_45
+  - first:
+      213: 1481173355967529969
+    second: magic-circle_menu_ani_46
+  - first:
+      213: -678443514889410111
+    second: magic-circle_menu_ani_47
+  - first:
+      213: -8471153119374189141
+    second: magic-circle_menu_ani_48
+  - first:
+      213: 1394596001877147754
+    second: magic-circle_menu_ani_49
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2640
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e224831f3d89cf5c0800000000000000
+      internalID: -4180298318054145490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_1
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 2640
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 498d6c45ddf492a30800000000000000
+      internalID: 4190968740273641620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_2
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 2640
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b13387e55d7c8a20800000000000000
+      internalID: 3065963254242292150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_3
+      rect:
+        serializedVersion: 2
+        x: 1980
+        y: 2640
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 931cf8608ad170710800000000000000
+      internalID: 1659327595211112761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_4
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 2640
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d86dd45a4cea54c30800000000000000
+      internalID: 4343069575278876301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_5
+      rect:
+        serializedVersion: 2
+        x: 3300
+        y: 2640
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aae0cc72d87dcdc0800000000000000
+      internalID: -3617102080277157208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_6
+      rect:
+        serializedVersion: 2
+        x: 3960
+        y: 2640
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f15509e0a4326870800000000000000
+      internalID: 8674553697977848307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_7
+      rect:
+        serializedVersion: 2
+        x: 4620
+        y: 2640
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc5d6ef95f1e1fb70800000000000000
+      internalID: 8931167981118346703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_8
+      rect:
+        serializedVersion: 2
+        x: 5280
+        y: 2640
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fbca01a3afdf27d0800000000000000
+      internalID: -2940886137775141903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_9
+      rect:
+        serializedVersion: 2
+        x: 5940
+        y: 2640
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f827e181e66fc6890800000000000000
+      internalID: -7463319529748270449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1980
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddca3c2018bf27d90800000000000000
+      internalID: -7101337130894119715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_11
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1980
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1b613b614f33faf0800000000000000
+      internalID: -363877594683053285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_12
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 1980
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0591761f5cab1b510800000000000000
+      internalID: 1563235904995662160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_13
+      rect:
+        serializedVersion: 2
+        x: 1980
+        y: 1980
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f73ee7d0d72e4aa0800000000000000
+      internalID: -6174954261148977162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_14
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 1980
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f119cc1fd50efa820800000000000000
+      internalID: 2931808576534778143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_15
+      rect:
+        serializedVersion: 2
+        x: 3300
+        y: 1980
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a98a9f86cf01cbf30800000000000000
+      internalID: 4592564396290058394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_16
+      rect:
+        serializedVersion: 2
+        x: 3960
+        y: 1980
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b23861020d8df47c0800000000000000
+      internalID: -4084807948598607061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_17
+      rect:
+        serializedVersion: 2
+        x: 4620
+        y: 1980
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60e148f3f9f3ff920800000000000000
+      internalID: 3026207427814235654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_18
+      rect:
+        serializedVersion: 2
+        x: 5280
+        y: 1980
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04748880bae08a670800000000000000
+      internalID: 8550100020308232000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_19
+      rect:
+        serializedVersion: 2
+        x: 5940
+        y: 1980
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 340c1bfa70e5e28d0800000000000000
+      internalID: -2869252525482983357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1320
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b030d4c9ebbcfc20800000000000000
+      internalID: 3241672444503666870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_21
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1320
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e99c8047a3cca0030800000000000000
+      internalID: 3461803815014549918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_22
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 1320
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0550dd80b6e4f6c60800000000000000
+      internalID: 7813550100128269648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_23
+      rect:
+        serializedVersion: 2
+        x: 1980
+        y: 1320
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b61fd5adac290df0800000000000000
+      internalID: -213590382999562572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_24
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 1320
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d00e0266bb13a380800000000000000
+      internalID: -8961288363394072363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_25
+      rect:
+        serializedVersion: 2
+        x: 3300
+        y: 1320
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 687f701df06bfc880800000000000000
+      internalID: -8588445785324521594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_26
+      rect:
+        serializedVersion: 2
+        x: 3960
+        y: 1320
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f704584bc9ef45e0800000000000000
+      internalID: -1923061456562812935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_27
+      rect:
+        serializedVersion: 2
+        x: 4620
+        y: 1320
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ba874fa566280270800000000000000
+      internalID: 8216859738311723701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_28
+      rect:
+        serializedVersion: 2
+        x: 5280
+        y: 1320
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dca9f7ce3ec52cf0800000000000000
+      internalID: -277589032975094576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_29
+      rect:
+        serializedVersion: 2
+        x: 5940
+        y: 1320
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f100151cd4cd4e130800000000000000
+      internalID: 3595240629062402079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 660
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fc175e3df0104360800000000000000
+      internalID: 7151734888123014384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_31
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 660
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaa0f716411f085b0800000000000000
+      internalID: -5368025685988275542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_32
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 660
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 199435481128c63e0800000000000000
+      internalID: -2059127917869053551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_33
+      rect:
+        serializedVersion: 2
+        x: 1980
+        y: 660
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98dd0f852e5c62f70800000000000000
+      internalID: 9162228067877313929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_34
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 660
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48577c51649cdfed0800000000000000
+      internalID: -2378523725331466876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_35
+      rect:
+        serializedVersion: 2
+        x: 3300
+        y: 660
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e02c3d7066a28fc50800000000000000
+      internalID: 6699151063419961870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_36
+      rect:
+        serializedVersion: 2
+        x: 3960
+        y: 660
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5316493be77ff62e0800000000000000
+      internalID: -2130211975172169419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_37
+      rect:
+        serializedVersion: 2
+        x: 4620
+        y: 660
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 248b92526516dcd80800000000000000
+      internalID: -8228813921517455294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_38
+      rect:
+        serializedVersion: 2
+        x: 5280
+        y: 660
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f2e61e28d480b740800000000000000
+      internalID: 5165774836615013108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_39
+      rect:
+        serializedVersion: 2
+        x: 5940
+        y: 660
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c59281c085484f870800000000000000
+      internalID: 8715736692563650908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb4d77ea602bb8390800000000000000
+      internalID: -7814956986604727105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_41
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 0
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eb08eaf3f9734300800000000000000
+      internalID: 235165694346922982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_42
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 0
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94921ff6c93da3bc0800000000000000
+      internalID: -3802494266514527927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_43
+      rect:
+        serializedVersion: 2
+        x: 1980
+        y: 0
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a75541fdbbac202a0800000000000000
+      internalID: -6772627981361457798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_44
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 0
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62e17304d1760c680800000000000000
+      internalID: -8736869901769695706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_45
+      rect:
+        serializedVersion: 2
+        x: 3300
+        y: 0
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e95405d82e70c410800000000000000
+      internalID: 1495333790124628452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_46
+      rect:
+        serializedVersion: 2
+        x: 3960
+        y: 0
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f3c735d15f2e8410800000000000000
+      internalID: 1481173355967529969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_47
+      rect:
+        serializedVersion: 2
+        x: 4620
+        y: 0
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c969deb73fa596f0800000000000000
+      internalID: -678443514889410111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_48
+      rect:
+        serializedVersion: 2
+        x: 5280
+        y: 0
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bad52c9be1b607a80800000000000000
+      internalID: -8471153119374189141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic-circle_menu_ani_49
+      rect:
+        serializedVersion: 2
+        x: 5940
+        y: 0
+        width: 660
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a604111cca99a5310800000000000000
+      internalID: 1394596001877147754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

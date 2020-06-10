@@ -8,6 +8,8 @@ public class Actions : MonoBehaviour
 {
     private PlayerBattle player;
     private Vector2 player_pos;
+    
+    private GameObject action_menu;
     private GameObject skill1;
     private GameObject skill2;
     private GameObject skill3;
@@ -21,6 +23,7 @@ public class Actions : MonoBehaviour
         player = GameObject.Find("Player").GetComponent<PlayerBattle>();
         player_pos = player.transform.position;
 
+        action_menu = GameObject.Find("Action_menu");
         skill1 = GameObject.Find("Skill1");
         skill2 = GameObject.Find("Skill2");
         skill3 = GameObject.Find("Skill3");
@@ -32,11 +35,12 @@ public class Actions : MonoBehaviour
     {   
         //플레이어 중심으로 액션 이미지 배치
         //굳이 math 연산까지 할 필요는 없을 것 같아 절대값으로 작성 - 이세영
-        skill1.transform.position = Camera.main.WorldToScreenPoint(player_pos + new Vector2(0.0f, 1.5f));
-        skill2.transform.position = Camera.main.WorldToScreenPoint(player_pos + new Vector2(1.4f, 0.2f));
-        skill3.transform.position = Camera.main.WorldToScreenPoint(player_pos + new Vector2(0.8f, -1.4f));
-        move.transform.position = Camera.main.WorldToScreenPoint(player_pos + new Vector2(-0.8f, -1.4f));
-        guard.transform.position = Camera.main.WorldToScreenPoint(player_pos + new Vector2(-1.4f, 0.2f));
+        action_menu.transform.position = Camera.main.WorldToScreenPoint(player_pos + new Vector2(0.0f, 0.0f));
+        skill1.transform.position = Camera.main.WorldToScreenPoint(player_pos + new Vector2(0.0f, 2.0f));
+        skill2.transform.position = Camera.main.WorldToScreenPoint(player_pos + new Vector2(2.0f, 0.3f));
+        skill3.transform.position = Camera.main.WorldToScreenPoint(player_pos + new Vector2(1.0f, -2.0f));
+        move.transform.position = Camera.main.WorldToScreenPoint(player_pos + new Vector2(-1.0f, -2.0f));
+        guard.transform.position = Camera.main.WorldToScreenPoint(player_pos + new Vector2(-2.0f, 0.3f));
 
         //스킬 밸런스가 정해지면 수정 - 이세영
         if (!string.IsNullOrEmpty(action_name))
