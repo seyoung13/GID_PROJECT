@@ -55,15 +55,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Action_menu.cs" />
-     <Compile Include="Assets\Scripts\Actions.cs" />
-     <Compile Include="Assets\Scripts\CameraMove.cs" />
-     <Compile Include="Assets\Scripts\Caster.cs" />
-     <Compile Include="Assets\Scripts\Enemy.cs" />
-     <Compile Include="Assets\Scripts\GameManager.cs" />
-     <Compile Include="Assets\Scripts\Global_Variable.cs" />
-     <Compile Include="Assets\Scripts\PlayerBattle.cs" />
-     <Compile Include="Assets\Scripts\PlayerMove.cs" />
+     <Compile Include="Assets\Script\Action_menu.cs" />
+     <Compile Include="Assets\Script\Actions.cs" />
+     <Compile Include="Assets\Script\CameraMove.cs" />
+     <Compile Include="Assets\Script\Caster.cs" />
+     <Compile Include="Assets\Script\Destroy.cs" />
+     <Compile Include="Assets\Script\DontDestroy.cs" />
+     <Compile Include="Assets\Script\ElementalTextShower.cs" />
+     <Compile Include="Assets\Script\Enemy.cs" />
+     <Compile Include="Assets\Script\GameManager.cs" />
+     <Compile Include="Assets\Script\Option_setting_off.cs" />
+     <Compile Include="Assets\Script\PlayerBattle.cs" />
+     <Compile Include="Assets\Script\PlayerMove.cs" />
+     <Compile Include="Assets\Script\Sound.cs" />
+     <Compile Include="Assets\Script\TileMapChoose.cs" />
+     <Compile Include="Assets\Script\WorldToScreen.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
