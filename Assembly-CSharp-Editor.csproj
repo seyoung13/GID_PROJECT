@@ -55,21 +55,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Editor\Action_menu.cs" />
-     <Compile Include="Assets\Editor\Actions.cs" />
-     <Compile Include="Assets\Editor\CameraMove.cs" />
-     <Compile Include="Assets\Editor\Caster.cs" />
-     <Compile Include="Assets\Editor\Destroy.cs" />
-     <Compile Include="Assets\Editor\DontDestroy.cs" />
-     <Compile Include="Assets\Editor\ElementalTextShower.cs" />
-     <Compile Include="Assets\Editor\Enemy.cs" />
-     <Compile Include="Assets\Editor\GameManager.cs" />
-     <Compile Include="Assets\Editor\Option_setting_off.cs" />
-     <Compile Include="Assets\Editor\PlayerBattle.cs" />
-     <Compile Include="Assets\Editor\PlayerMove.cs" />
-     <Compile Include="Assets\Editor\Sound.cs" />
-     <Compile Include="Assets\Editor\TileMapChoose.cs" />
-     <Compile Include="Assets\Editor\WorldToScreen.cs" />
+     <Compile Include="Assets\Custom 2D Colliders\Scripts\Editor\ArcCollider2D_Editor.cs" />
+     <Compile Include="Assets\Custom 2D Colliders\Scripts\Editor\BezierCurveCollider2D_Editor.cs" />
+     <Compile Include="Assets\Custom 2D Colliders\Scripts\Editor\CapsuleCollider2D_Editor.cs" />
+     <Compile Include="Assets\Custom 2D Colliders\Scripts\Editor\EllipseCollider2D_Editor.cs" />
+     <Compile Include="Assets\Custom 2D Colliders\Scripts\Editor\RoundedBoxCollider2D_Editor.cs" />
+     <Compile Include="Assets\Custom 2D Colliders\Scripts\Editor\StarCollider2D_Editor.cs" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -266,7 +257,7 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.14f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
- <HintPath>D:/GITP/GID_PROJECT/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+ <HintPath>D:/backup/GUID/GID_PROJECT/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.14f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -623,91 +614,91 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.14f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.TestRunner">
- <HintPath>D:/GITP/GID_PROJECT/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+ <HintPath>D:/backup/GUID/GID_PROJECT/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.TestRunner">
- <HintPath>D:/GITP/GID_PROJECT/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+ <HintPath>D:/backup/GUID/GID_PROJECT/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>D:/GITP/GID_PROJECT/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>D:/backup/GUID/GID_PROJECT/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Animation.Runtime">
- <HintPath>D:/GITP/GID_PROJECT/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
+ <HintPath>D:/backup/GUID/GID_PROJECT/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.PixelPerfect.Editor">
- <HintPath>D:/GITP/GID_PROJECT/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
+ <HintPath>D:/backup/GUID/GID_PROJECT/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>D:/GITP/GID_PROJECT/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>D:/backup/GUID/GID_PROJECT/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.SpriteShape.Editor">
- <HintPath>D:/GITP/GID_PROJECT/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
+ <HintPath>D:/backup/GUID/GID_PROJECT/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>D:/GITP/GID_PROJECT/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>D:/backup/GUID/GID_PROJECT/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Path.Editor">
- <HintPath>D:/GITP/GID_PROJECT/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
+ <HintPath>D:/backup/GUID/GID_PROJECT/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>D:/GITP/GID_PROJECT/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>D:/backup/GUID/GID_PROJECT/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>D:/GITP/GID_PROJECT/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>D:/backup/GUID/GID_PROJECT/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Animation.Triangle.Runtime">
- <HintPath>D:/GITP/GID_PROJECT/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
+ <HintPath>D:/backup/GUID/GID_PROJECT/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="PsdPlugin">
- <HintPath>D:/GITP/GID_PROJECT/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
+ <HintPath>D:/backup/GUID/GID_PROJECT/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>D:/GITP/GID_PROJECT/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>D:/backup/GUID/GID_PROJECT/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>D:/GITP/GID_PROJECT/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>D:/backup/GUID/GID_PROJECT/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Mathematics">
- <HintPath>D:/GITP/GID_PROJECT/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+ <HintPath>D:/backup/GUID/GID_PROJECT/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Psdimporter.Editor">
- <HintPath>D:/GITP/GID_PROJECT/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
+ <HintPath>D:/backup/GUID/GID_PROJECT/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.InternalAPIEngineBridge.001">
- <HintPath>D:/GITP/GID_PROJECT/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
+ <HintPath>D:/backup/GUID/GID_PROJECT/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Sprite.Editor">
- <HintPath>D:/GITP/GID_PROJECT/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+ <HintPath>D:/backup/GUID/GID_PROJECT/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Common.Runtime">
- <HintPath>D:/GITP/GID_PROJECT/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
+ <HintPath>D:/backup/GUID/GID_PROJECT/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Tilemap.Editor">
- <HintPath>D:/GITP/GID_PROJECT/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+ <HintPath>D:/backup/GUID/GID_PROJECT/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.SpriteShape.Runtime">
- <HintPath>D:/GITP/GID_PROJECT/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
+ <HintPath>D:/backup/GUID/GID_PROJECT/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.PixelPerfect">
- <HintPath>D:/GITP/GID_PROJECT/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
+ <HintPath>D:/backup/GUID/GID_PROJECT/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Animation.Editor">
- <HintPath>D:/GITP/GID_PROJECT/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
+ <HintPath>D:/backup/GUID/GID_PROJECT/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Mathematics.Editor">
- <HintPath>D:/GITP/GID_PROJECT/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+ <HintPath>D:/backup/GUID/GID_PROJECT/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>D:/GITP/GID_PROJECT/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>D:/backup/GUID/GID_PROJECT/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Common.Editor">
- <HintPath>D:/GITP/GID_PROJECT/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
+ <HintPath>D:/backup/GUID/GID_PROJECT/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.InternalAPIEditorBridge.001">
- <HintPath>D:/GITP/GID_PROJECT/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
+ <HintPath>D:/backup/GUID/GID_PROJECT/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>D:/GITP/GID_PROJECT/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>D:/backup/GUID/GID_PROJECT/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

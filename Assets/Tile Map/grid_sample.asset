@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: grid_sample
   m_EditorClassIdentifier: 
   m_Sprite: {fileID: 21300000, guid: 81bbae8d1b2bee54198df0d9fc446e8a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.23529412}
   m_Transform:
     e00: 1
     e01: 0
