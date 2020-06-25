@@ -28,13 +28,21 @@ public class BattleManager : MonoBehaviour
 {
     private PlayerBattle player;
     private Enemy enemy;
-    public Collider2D player_pos;
-    public Collider2D enemy_pos;
+    
     private character[,] board = new character[5, 6];
     private GameObject path;
     private PathFinding tilemap;
 
+    public Collider2D player_pos;
+    public Collider2D enemy_pos;
+    public Actions player_action;
+
     float curr_x, curr_y;
+    private bool is_player_moved = false;
+    private bool is_enemy_moved = false;
+    static public bool is_someone_died = false;
+    bool player_turn = true;
+
     void Start()
     {
         player = GameObject.Find("Player").GetComponent<PlayerBattle>();
@@ -46,103 +54,192 @@ public class BattleManager : MonoBehaviour
         for (int i = 0; i < 5; i++)
             for (int j = 0; j < 6; j++)
                 board[i, j] = character.EMPTY;
+
+        player.State = StateMachine.WAITING;
+        enemy.State = StateMachine.END;
     }
 
-    void Update()
+    void FixedUpdate()
     {
-        for (int i = 0; i < 5; i++)
-            for (int j = 0; j < 6; j++)
-                if (board[i, j] == character.PLAYER)
-                {   
-                    player.Row = i;
-                    player.Col = j;
-                }
-                else if (board[i, j] == character.ENEMY)
-                {
-                    enemy.Row = i;
-                    enemy.Col = j;
-                }
+        SetObjectRowNColumn();
 
-        if (player.State != StateMachine.END) 
+        if (player_turn)
+        {
             switch (player.State)
             {
                 case StateMachine.WAITING:
-                    Debug.Log("Player State WATING");
-                    break;
+                    {
+                        if (!string.IsNullOrEmpty(player_action.Action_Name) && !Caster.is_mousebutton_down)
+                            switch (player_action.Action_Name)
+                            {
+                                case "Guard":
+                                case "Skill1":
+                                case "Skill2":
+                                case "Skill3":
+                                    player.State = StateMachine.ACTION;
+                                    break;
+                                case "Move":
+                                    PathFinding.move_point = 3;
+                                    if (!is_player_moved)
+                                        player.State = StateMachine.MOVING;
+                                    break;
+                            }
+                        break;
+                    }
                 case StateMachine.MOVING:
-                    Debug.Log("Player State MOVING");
-                    path.SetActive(true);
-                    tilemap = GameObject.Find("Tilemap").GetComponent<PathFinding>();
-
-                    if (!PathFinding.is_clicked)
                     {
-                        GetObjectLocationOnPlatform(player_pos);
-                        GetObjectLocationOnPlatform(enemy_pos);
-                        curr_x = player.transform.position.x;
-                        curr_y = player.transform.position.y;
-                    }
+                        path.SetActive(true);
+                        tilemap = GameObject.Find("Tilemap").GetComponent<PathFinding>();
 
-                    if (PathFinding.is_clicked)
-                    {
-                        int diff_row = tilemap.TargetRow - player.Row;
-                        int diff_col = tilemap.TargetCol - player.Col;
-                        Vector2 ref_velocity = Vector2.zero;
-                        Vector2 next = new Vector2(curr_x + diff_col * 2.5f,
-                            curr_y - diff_row * 0.75f);
-                        player.transform.position = Vector2.SmoothDamp(player.transform.position,
-                            next, ref ref_velocity, 0.1f);
-                        Debug.Log("player:"+player.Row.ToString() + player.Col.ToString());
-                        if (player.Row == tilemap.TargetRow && player.Col == tilemap.TargetCol)
-                        { 
-                            player.State = StateMachine.END;
-                            PathFinding.is_clicked = false;
-                            for (int i = 0; i < 5; i++)
-                                for (int j = 0; j < 6; j++)
-                                    board[i, j] = character.EMPTY;
-                            GetObjectLocationOnPlatform(player_pos);
-                            GetObjectLocationOnPlatform(enemy_pos);
+                        if (!PathFinding.is_clicked)
+                        {
+                            SetLocationOnPlatform(player_pos);
+                            SetLocationOnPlatform(enemy_pos);
+                            curr_x = player.transform.position.x;
+                            curr_y = player.transform.position.y;
                         }
-                    }
-                    break;
-                case StateMachine.ACTION:
-                    Debug.Log("Player State ACTION");
-                    break;
-                case StateMachine.DEAD:
-                    break;
-                case StateMachine.END:
-                    Debug.Log("Player State END");
-                    enemy.State = StateMachine.WAITING;
-                    break;
-            }
 
-        if (enemy.State != StateMachine.END)
+                        if (PathFinding.is_clicked)
+                        {
+                            int diff_row = tilemap.TargetRow - player.Row;
+                            int diff_col = tilemap.TargetCol - player.Col;
+                            Vector2 next = new Vector2(curr_x + diff_col * 2.5f,
+                                curr_y - diff_row * 0.75f);
+                            player.transform.position = Vector2.MoveTowards(player.transform.position,
+                                next, 0.2f);
+                            if (player.transform.position == new Vector3(next.x, next.y, 0))
+                            {
+                                player.State = StateMachine.WAITING;
+                                PathFinding.is_clicked = false;
+                                for (int i = 0; i < 5; i++)
+                                    for (int j = 0; j < 6; j++)
+                                        board[i, j] = character.EMPTY;
+                                path.SetActive(false);
+                                is_player_moved = true;
+                                PathFinding.is_clicked = false;
+                                RefreshBoard();
+                            }
+                        }
+                        break;
+                    }
+                case StateMachine.ACTION:
+                    {
+                        if (!Caster.is_mousebutton_down)
+                        {
+                            switch (player_action.Action_Name)
+                            {
+                                case "Guard":
+                                    player_action.Guard();
+                                    break;
+                                case "Skill1":
+                                    player_action.Skill1();
+                                    SkillHitDetection(player_action.Action_Name);
+                                    break;
+                                case "Skill2":
+                                    player_action.Skill2();
+                                    SkillHitDetection(player_action.Action_Name);
+                                    break;
+                                case "Skill3":
+                                    player_action.Skill3();
+                                    SkillHitDetection(player_action.Action_Name);
+                                    break;
+                            }
+                            player_action.Action_Name = "";
+                            player.State = StateMachine.END;
+                        }
+                        break;
+                    }
+                case StateMachine.DEAD:
+                    {
+                        is_someone_died = true;
+                        break;
+                    }
+                case StateMachine.END:
+                    {
+                        is_player_moved = false;
+                        if (player.Defence >= 10)
+                            player.Defence = 5;
+                        if (enemy.State == StateMachine.END)
+                            enemy.State = StateMachine.WAITING;
+                        player_turn = false;
+                        break;
+                    }
+            }
+        }
+        
+        if (!player_turn)
+        {
+            Debug.Log("E S:" + enemy.State.ToString());
             switch (enemy.State)
             {
                 case StateMachine.WAITING:
-                    Debug.Log("Enemy State WAITING.");
-                    enemy.State = StateMachine.MOVING;
-                    break;
+                    {
+                        enemy.State = StateMachine.MOVING;
+                        is_enemy_moved = false;
+                        break;
+                    }
                 case StateMachine.MOVING:
-                    Debug.Log("Enemy State MOVING.");
-                    enemy.State = StateMachine.ACTION;
-                    break;
-                case StateMachine.ACTION:
-                    Debug.Log("Enemy State ACTION.");
-                    enemy.State = StateMachine.END;
-                    break;
-                case StateMachine.DEAD:
-                    break;
-                case StateMachine.END:
-                    Debug.Log("Enemy State END");
-                    player.State = StateMachine.WAITING;
-                    break;
-            }
+                    {
+                        if (!is_enemy_moved)
+                        {
+                            SetLocationOnPlatform(player_pos);
+                            SetLocationOnPlatform(enemy_pos);
+                            enemy.ai();
+                            is_enemy_moved = true;
+                        }
 
-        Debug.Log("ps "+player.State.ToString());
-        Debug.Log("es "+enemy.State.ToString());
+                        if (is_enemy_moved)
+                        {
+                            Vector2 next = new Vector2(enemy.NextX, enemy.NextY);
+                            enemy.transform.position = Vector2.MoveTowards(enemy.transform.position,
+                               next, 0.2f);
+                            if (enemy.transform.position == new Vector3(enemy.NextX, enemy.NextY, 0))
+                            {
+                                for (int i = 0; i < 5; i++)
+                                    for (int j = 0; j < 6; j++)
+                                        board[i, j] = character.EMPTY;
+                                enemy.State = StateMachine.END;
+                                RefreshBoard();
+                            }
+                        }
+                        
+                        break;
+                    }
+                case StateMachine.ACTION:
+                    {
+                        enemy.State = StateMachine.END;
+                        break;
+                    }
+                case StateMachine.DEAD:
+                    {
+                        is_someone_died = true;
+                        break;
+                    }
+                case StateMachine.END:
+                    {
+                        if (player.State == StateMachine.END)
+                            player.State = StateMachine.WAITING;
+                        player_turn = true;
+                        break;
+                    }
+            }
+        }
+
+        /*
+        if (player.Health_Point <= 0)
+        {
+            enemy.State = StateMachine.END;
+            player.State = StateMachine.DEAD;
+        }
+        if (enemy.Health_Point <= 0)
+        {
+            player.State = StateMachine.END;
+            enemy.State = StateMachine.DEAD; 
+        }*/
+        Debug.Log("enemyHP"+enemy.Health_Point.ToString());
     }
 
-    private void GetObjectLocationOnPlatform(Collider2D collider)
+    private void SetLocationOnPlatform(Collider2D collider)
     {
         character ch = character.EMPTY;
         if (collider.gameObject.tag == "Player")
@@ -156,12 +253,12 @@ public class BattleManager : MonoBehaviour
             y -= 1;
 
         double left, top, right, bot;
-        for (int i=0; i<5; i++)
-            for (int j=0; j<6; j++)
+        for (int i = 0; i < 5; i++)
+            for (int j = 0; j < 6; j++)
             {
                 top = 0.5 - i * 0.75;
                 bot = top - 0.75;
-                
+
                 left = -8 + j * 2.5;
                 right = left + 2.5;
 
@@ -172,4 +269,171 @@ public class BattleManager : MonoBehaviour
             }
     }
 
+    private void SetObjectRowNColumn()
+    {
+        for (int i = 0; i < 5; i++)
+            for (int j = 0; j < 6; j++)
+                if (board[i, j] == character.PLAYER)
+                {
+                    player.Row = i;
+                    player.Col = j;
+                }
+                else if (board[i, j] == character.ENEMY)
+                {
+                    enemy.Row = i;
+                    enemy.Col = j;
+                }    
+    }
+
+    private void SkillHitDetection(string action_name)
+    {
+        if (action_name == "Skill1")
+        {
+            int damage = (2 * player.Attack - enemy.Defence);
+
+            if (player.Col <= 3)
+            {
+                if (board[player.Row, player.Col + 1] == character.ENEMY ||
+                    board[player.Row, player.Col + 2] == character.ENEMY)
+                    enemy.Health_Point -= damage;
+            }
+            else if (player.Col == 4)
+            {
+                if (board[player.Row, player.Col + 1] == character.ENEMY)
+                    enemy.Health_Point -= damage;
+            }
+
+        }
+        else if (action_name == "Skill2")
+        {
+            int damage = player.Attack - enemy.Defence;
+
+            if (1 <= player.Row && player.Row <= 3)
+            {
+                if (player.Col <= 3)
+                {
+                    if (board[player.Row - 1, player.Col + 1] == character.ENEMY ||
+                        board[player.Row - 1, player.Col + 2] == character.ENEMY ||
+                        board[player.Row + 1, player.Col + 1] == character.ENEMY ||
+                        board[player.Row + 1, player.Col + 2] == character.ENEMY)
+                        enemy.Health_Point -= damage;
+                }
+                else if (player.Col == 4)
+                {
+                    if (board[player.Row - 1, player.Col + 1] == character.ENEMY ||
+                        board[player.Row + 1, player.Col + 1] == character.ENEMY)
+                        enemy.Health_Point -= damage;
+                }
+            }
+            else if (player.Row == 0)
+            {
+                if (player.Col <= 3)
+                {
+                    if (board[player.Row + 1, player.Col + 1] == character.ENEMY ||
+                       board[player.Row + 1, player.Col + 2] == character.ENEMY)
+                        enemy.Health_Point -= damage;
+                }
+                else if (player.Col == 4)
+                {
+                    if (board[player.Row + 1, player.Col + 1] == character.ENEMY)
+                        enemy.Health_Point -= damage;
+                }
+            }
+            else if (player.Row == 4)
+            {
+                if (player.Col <= 3)
+                {
+                    if (board[player.Row - 1, player.Col + 1] == character.ENEMY ||
+                        board[player.Row - 1, player.Col + 2] == character.ENEMY)
+                        enemy.Health_Point -= damage;
+                }
+                else if (player.Col == 4)
+                {
+                    if (board[player.Row - 1, player.Col + 1] == character.ENEMY)
+                        enemy.Health_Point -= damage;
+                }
+            }
+        }
+        else if (action_name == "Skill3")
+        {
+            int damage = player.Attack - enemy.Defence;
+
+            if (1 <= player.Row && player.Row <= 3 && 1 <= player.Col && player.Col <= 4)
+            {
+                if (board[player.Row - 1, player.Col] == character.ENEMY ||
+                    board[player.Row - 1, player.Col + 1] == character.ENEMY ||
+                    board[player.Row, player.Col + 1] == character.ENEMY ||
+                    board[player.Row + 1, player.Col + 1] == character.ENEMY ||
+                    board[player.Row + 1, player.Col] == character.ENEMY ||
+                    board[player.Row + 1, player.Col - 1] == character.ENEMY ||
+                    board[player.Row, player.Col - 1] == character.ENEMY ||
+                    board[player.Row - 1, player.Col - 1] == character.ENEMY)
+                    enemy.Health_Point -= damage;
+            }
+            else if (player.Row == 0)
+            {
+                if (player.Col == 0)
+                {
+                    if (board[player.Row, player.Col + 1] == character.ENEMY ||
+                        board[player.Row + 1, player.Col + 1] == character.ENEMY ||
+                        board[player.Row + 1, player.Col] == character.ENEMY)
+                        enemy.Health_Point -= damage;
+                }
+                else if (player.Col == 5)
+                {
+                    if (board[player.Row + 1, player.Col] == character.ENEMY ||
+                        board[player.Row + 1, player.Col - 1] == character.ENEMY ||
+                        board[player.Row, player.Col - 1] == character.ENEMY)
+                        enemy.Health_Point -= damage;
+                }
+                else
+                {
+                    if (board[player.Row, player.Col + 1] == character.ENEMY ||
+                        board[player.Row + 1, player.Col + 1] == character.ENEMY ||
+                        board[player.Row + 1, player.Col] == character.ENEMY ||
+                        board[player.Row + 1, player.Col - 1] == character.ENEMY ||
+                        board[player.Row, player.Col - 1] == character.ENEMY)
+                        enemy.Health_Point -= damage;
+                }
+            }
+            else if (player.Row == 4)
+            {
+                if (player.Col == 0)
+                {
+                    if (board[player.Row, player.Col + 1] == character.ENEMY ||
+                        board[player.Row - 1, player.Col + 1] == character.ENEMY ||
+                        board[player.Row - 1, player.Col] == character.ENEMY)
+                        enemy.Health_Point -= damage;
+                }
+                else if (player.Col == 5)
+                {
+                    if (board[player.Row - 1, player.Col] == character.ENEMY ||
+                        board[player.Row - 1, player.Col - 1] == character.ENEMY ||
+                        board[player.Row, player.Col - 1] == character.ENEMY)
+                        enemy.Health_Point -= damage;
+                }
+                else
+                {
+                    if (board[player.Row, player.Col + 1] == character.ENEMY ||
+                        board[player.Row - 1, player.Col + 1] == character.ENEMY ||
+                        board[player.Row - 1, player.Col] == character.ENEMY ||
+                        board[player.Row - 1, player.Col - 1] == character.ENEMY ||
+                        board[player.Row, player.Col - 1] == character.ENEMY)
+                        enemy.Health_Point -= damage;
+                }
+            }
+        }
+    }
+
+    private void RefreshBoard()
+    {
+        for (int i = 0; i < 5; i++)
+            for (int j = 0; j < 6; j++)
+            board[i, j] = character.EMPTY;
+
+        SetLocationOnPlatform(player_pos);
+        SetLocationOnPlatform(enemy_pos);
+
+        SetObjectRowNColumn();
+    }
 }

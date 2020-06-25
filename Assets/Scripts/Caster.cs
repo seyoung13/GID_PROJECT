@@ -15,12 +15,13 @@ public class Caster : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHa
     static public bool is_active = false, is_mousebutton_down = false;
 
     void Start()
-    {   
+    {
         //플레이어 정보를 가져오고 캐스터를 가운데 배치
         player = GameObject.Find("Player");
         player_pos = player.transform.position;
         this.transform.position = Camera.main.WorldToScreenPoint(player_pos);
-        player_action = GameObject.Find("Skill1").GetComponent<Actions>();
+
+        player_action = GameObject.Find("Actions").GetComponent<Actions>();
     }
 
     //캐스터를 마우스로 누르면 마우스 버튼이 눌리고 활성화
@@ -29,7 +30,7 @@ public class Caster : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHa
     {
         is_active = true;
         is_mousebutton_down = true;
-    } 
+    }
 
     //드래그 중이면 캐스터는 마우스를 따라감
     public void OnDrag(PointerEventData eventData)
@@ -45,20 +46,21 @@ public class Caster : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHa
         is_mousebutton_down = false;
     }
 
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.tag == "Action")
+        {
+            //Debug.Log("Mouse On" + player_action.Action_Name.ToString());
+            player_action.Action_Name = collision.gameObject.name;
+        }
+    }
+
     //캐스터가 플레이어 위치로 돌아가 충돌에서 벗어난 후
     private void OnTriggerExit2D(Collider2D collider)
     {
         //마우스 버튼을 뗐는데
         if (!is_mousebutton_down)
         {   //액션 이미지 위에서 떼어졌다면
-            if (collider.gameObject.tag == "Action")
-            {
-                action_name = collider.gameObject.name;
-                Debug.Log(collider.gameObject.name.ToString() + "시전");
-                //스킬 밸런스가 정해지면 수정
-                player_action.SetActionName(action_name);
-            }
-
             player_pos = player.transform.position;
             this.transform.position = Camera.main.WorldToScreenPoint(player_pos);
             is_active = false;

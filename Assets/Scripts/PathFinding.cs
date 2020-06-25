@@ -13,7 +13,7 @@ public class PathFinding : MonoBehaviour
 {
     public Transform target;
     float tileDistance;
-    public int move_point;
+    public static int move_point;
 
     public Tilemap tilemap_range;
     public Tilemap tilemap;
@@ -25,8 +25,8 @@ public class PathFinding : MonoBehaviour
     public List<Vector3> tileWorldLocations;
     public List<int> TileRow;
     public List<int> TileCol;
+    public Actions player_action;
     private Vector3Int target_ontile;
-
 
     public int TargetRow
     { set { target_row = value; } get { return target_row; } }
@@ -72,7 +72,6 @@ public class PathFinding : MonoBehaviour
         this.tilemap_range.RefreshAllTiles();
         target_ontile = this.tilemap.WorldToCell(this.target.position);
 
-
         foreach (int y in TileRow)
         {
             foreach (int x in TileCol)
@@ -87,13 +86,49 @@ public class PathFinding : MonoBehaviour
             }
         }
 
+        /*
+        Debug.Log("Skill Tile:"+player_action.Action_Name);
+        switch (player_action.Action_Name)
+        {
+            case "Skill1":
+                for (int i=0; i<3; i++)
+                {
+                    Vector3Int v3 = new Vector3Int(-2+i, -5, 0);
 
+                    this.tilemap_range.SetTileFlags(v3, TileFlags.None);
+                    this.tilemap_range.SetColor(v3, Color.yellow);
+                }
+               break;
+            case "Skill2":
+                for (int i=0; i<3; i++)
+                {
+                    Vector3Int v3 = new Vector3Int(target_ontile.x + i, target_ontile.y - 3, 0);
+
+                    this.tilemap_range.SetTileFlags(v3, TileFlags.None);
+                    this.tilemap_range.SetColor(v3, Color.yellow);
+
+                    v3 = new Vector3Int(target_ontile.x + i, target_ontile.y - 1, 0);
+
+                    this.tilemap_range.SetTileFlags(v3, TileFlags.None);
+                    this.tilemap_range.SetColor(v3, Color.yellow);
+                }
+                break;
+            case "Skill3":
+                for (int i = 0; i < 3; i++)
+                    for(int j=0; j< 3; j++)
+                    {
+                        Vector3Int v3 = new Vector3Int(target_ontile.x -1 + i, target_ontile.y -3 +j, 0);
+
+                        this.tilemap_range.SetTileFlags(v3, TileFlags.None);
+                        this.tilemap_range.SetColor(v3, Color.yellow);
+                    }
+                break;
+        }*/
     }
 
 
     private void OnMouseDown()
     {
-
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit2D hit = Physics2D.Raycast(ray.origin, Vector3.zero);
 
@@ -120,13 +155,11 @@ public class PathFinding : MonoBehaviour
             else if (Math.Abs(x - target_ontile.x) + Math.Abs(y - target_ontile.y + 2) <= move_point)
             {
                 is_clicked = true;
-                move_point -= 1;
+                move_point -= Math.Abs(x - target_ontile.x) + Math.Abs(y - target_ontile.y + 2);
             }
             //범위 밖에 있다면 클릭 불가
             else
                 is_clicked = false;
-           
-
         }
     }
 
@@ -165,4 +198,16 @@ public class PathFinding : MonoBehaviour
     {
         this.tilemap.RefreshAllTiles();
     }
+
+    private int BoardToCellY(int j)
+    {
+        return j - 3;
+    }
+
+    private int BoardToCellX(int i)
+    {
+        return -(i + 1);
+    }
+
+
 }
