@@ -1,0 +1,671 @@
+fileFormatVersion: 2
+guid: 516f26b5304b4544080c08fd46d17b84
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5059124952337027807
+    second: barrir_0
+  - first:
+      213: -7291669735083668422
+    second: barrir_1
+  - first:
+      213: 7567836674916054500
+    second: barrir_2
+  - first:
+      213: 8699873150247097724
+    second: barrir_3
+  - first:
+      213: 1552346918450410584
+    second: barrir_4
+  - first:
+      213: -4774946695589614181
+    second: barrir_5
+  - first:
+      213: 5143627386866022499
+    second: barrir_6
+  - first:
+      213: -6857154349446512860
+    second: barrir_7
+  - first:
+      213: -8965196732519374742
+    second: barrir_8
+  - first:
+      213: -3479372337349113129
+    second: barrir_9
+  - first:
+      213: 5368513847577259649
+    second: barrir_10
+  - first:
+      213: 7692262904505724159
+    second: barrir_11
+  - first:
+      213: -1640287308388595667
+    second: barrir_12
+  - first:
+      213: 9096017621271888340
+    second: barrir_13
+  - first:
+      213: -952644764976609486
+    second: barrir_14
+  - first:
+      213: 8316769328266481057
+    second: barrir_15
+  - first:
+      213: -6731288652311850512
+    second: barrir_16
+  - first:
+      213: -868295873370140951
+    second: barrir_17
+  - first:
+      213: -7928776202296837778
+    second: barrir_18
+  - first:
+      213: 4726559568556890280
+    second: barrir_19
+  - first:
+      213: -1640191039994475942
+    second: barrir_20
+  - first:
+      213: 9005829188265332385
+    second: barrir_21
+  - first:
+      213: -288055992142583493
+    second: barrir_22
+  - first:
+      213: -5424803336431356593
+    second: barrir_23
+  - first:
+      213: -7454133615153174246
+    second: barrir_24
+  - first:
+      213: 8528081911403684691
+    second: barrir_0
+  - first:
+      213: 2110259755380481552
+    second: barrir_1
+  - first:
+      213: 616316535545102557
+    second: barrir_2
+  - first:
+      213: -4958024956371126066
+    second: barrir_3
+  - first:
+      213: 1725839904061197139
+    second: barrir_4
+  - first:
+      213: -712308847369054177
+    second: barrir_5
+  - first:
+      213: -5217218586838442893
+    second: barrir_6
+  - first:
+      213: -8728173634429849504
+    second: barrir_7
+  - first:
+      213: -2630735679564746837
+    second: barrir_8
+  - first:
+      213: 2508153876840034067
+    second: barrir_9
+  - first:
+      213: -5174337684871502742
+    second: barrir_10
+  - first:
+      213: -4309179843279418597
+    second: barrir_11
+  - first:
+      213: -2585587216763577107
+    second: barrir_12
+  - first:
+      213: -9128372736207587293
+    second: barrir_13
+  - first:
+      213: -3851640839142549841
+    second: barrir_14
+  - first:
+      213: -7254956220244297740
+    second: barrir_15
+  - first:
+      213: -682792898630580176
+    second: barrir_16
+  - first:
+      213: 8342576036923250780
+    second: barrir_17
+  - first:
+      213: -4928240485455121300
+    second: barrir_18
+  - first:
+      213: 280613421662645850
+    second: barrir_19
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: barrir_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 884
+        width: 221
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 353a6a09055d95670800000000000000
+      internalID: 8528081911403684691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrir_1
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 884
+        width: 221
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01e914f1116294d10800000000000000
+      internalID: 2110259755380481552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrir_2
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 884
+        width: 221
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd08d5aaf989d8800800000000000000
+      internalID: 616316535545102557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrir_3
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 884
+        width: 221
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec83af7229e813bb0800000000000000
+      internalID: -4958024956371126066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrir_4
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 884
+        width: 221
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35b03c4bf3a63f710800000000000000
+      internalID: 1725839904061197139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrir_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 663
+        width: 221
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f18133690ee5d16f0800000000000000
+      internalID: -712308847369054177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrir_6
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 663
+        width: 221
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37cdde75657b897b0800000000000000
+      internalID: -5217218586838442893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrir_7
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 663
+        width: 221
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 060f0e5c25c4fd680800000000000000
+      internalID: -8728173634429849504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrir_8
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 663
+        width: 221
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bafe89176dfbd7bd0800000000000000
+      internalID: -2630735679564746837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrir_9
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 663
+        width: 221
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31fa11789a0cec220800000000000000
+      internalID: 2508153876840034067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrir_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 442
+        width: 221
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6421595a4f0138b0800000000000000
+      internalID: -5174337684871502742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrir_11
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 442
+        width: 221
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1b8e0873c7b234c0800000000000000
+      internalID: -4309179843279418597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrir_12
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 442
+        width: 221
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dec140910262e1cd0800000000000000
+      internalID: -2585587216763577107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrir_13
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 442
+        width: 221
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3287cf05c51815180800000000000000
+      internalID: -9128372736207587293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrir_14
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 442
+        width: 221
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa6558c40193c8ac0800000000000000
+      internalID: -3851640839142549841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrir_15
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 221
+        width: 221
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f7f35f81c7315b90800000000000000
+      internalID: -7254956220244297740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrir_16
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 221
+        width: 221
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03807fde97b3686f0800000000000000
+      internalID: -682792898630580176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrir_17
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 221
+        width: 221
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c581f7864b8c6c370800000000000000
+      internalID: 8342576036923250780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrir_18
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 221
+        width: 221
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c64bfb0b36f5b9bb0800000000000000
+      internalID: -4928240485455121300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrir_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 221
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5ea8659b60f4e300800000000000000
+      internalID: 280613421662645850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
