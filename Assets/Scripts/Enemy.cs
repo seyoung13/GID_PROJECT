@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 //적의 정보가 있는 스크립트
 public class Enemy : MonoBehaviour
@@ -12,7 +13,13 @@ public class Enemy : MonoBehaviour
     private StateMachine state;
     private Animator EnemyAnimator;
     public bool ActionEnd;
-   
+
+    private Enemy enemy;
+    private Vector2 enemy_pos;
+    private GameObject target;
+    private GameObject info;
+    private GameObject maxHP, currHP;
+    private float next_x, next_y;
 
     private PathFinding tilemap;
     //public List<string> EnemyAi = new List<string>() { "attack", "move", "idle" };
@@ -31,6 +38,10 @@ public class Enemy : MonoBehaviour
     { set { col = value; } get { return col; } }
     public StateMachine State
     { set { state = value; } get { return state; } }
+    public float NextX
+    { set { next_x = value; } get { return next_x; } }
+    public float NextY
+    { set { next_y = value; } get { return next_y; } }
 
     public Vector2 position;
 
@@ -39,72 +50,110 @@ public class Enemy : MonoBehaviour
         EnemyAnimator = GetComponent<Animator>();
         if (this.gameObject.tag == "Enemy")
         {
-            health_point = 30;
+            health_point = 50;
             action_point = 5;
-            attack = 5;
+            attack = 10;
             defence = 5;
         }
 
-        state = StateMachine.END;
-        Debug.Log(EnemyAnimator);
+        enemy = GameObject.Find("Enemy").GetComponent<Enemy>();
+        enemy_pos = enemy.transform.position;
+
+        maxHP = GameObject.Find("EnemyMaxHPBar");
+        currHP = GameObject.Find("EnemyCurrHPBar");
+
+        info = GameObject.Find("EnemyInfo");
+        info.SetActive(false);
+
+        //state = StateMachine.END;
+        //Debug.Log(EnemyAnimator);
     }
     public void ai()
     {
-        position = transform.position;
-       
-        for (int i = 0; i < 3; ++i)
+        Debug.Log("몬스터 이동");
+        EnemyMove move = (EnemyMove)Random.Range(0, 4);
+        if (move == EnemyMove.up)
         {
-            EnemyAi rand = (EnemyAi)Random.Range(0, 2);
-            if (action_point > 0)
+            if (enemy.transform.position.y < 0)
             {
-                if (rand == EnemyAi.attack)
-                {
-                    Debug.Log("몬스터 공격");
-                    EnemyAnimator.SetTrigger("is_attack");
-
-                }
-                else if (rand == EnemyAi.move)
-                {
-                    Debug.Log("몬스터 이동");
-                    EnemyMove move = (EnemyMove)Random.Range(0, 4);
-                    if (move == EnemyMove.up)
-                    {
-                        if(position.y<0)
-                            position.y +=0.8f;
-                    }
-                    else if (move == EnemyMove.down)
-                    {
-                        if(position.y>-3)
-                            position.y -= 0.8f;
-                    }
-                    else if (move == EnemyMove.left)
-                    {
-                        if(position.x>-4.34f)
-                            position.x -= 2.5f;
-                    }
-                    else if (move == EnemyMove.right)
-                    {
-                        if(position.x<6.5f)
-                            position.x += 2.5f;
-                    }
-
-                    transform.position = position;
-                }
-                else if (rand == EnemyAi.idle)
-                {
-                    Debug.Log("몬스터 대기");
-                    EnemyAnimator.SetBool("is_die", true);
-
-                }
+                next_x = enemy.transform.position.x;
+                next_y = enemy.transform.position.y + 0.75f; 
             }
-            Debug.Log("액션포인트 끝");
         }
-     
-      
+        else if (move == EnemyMove.down)
+        {
+            if (enemy.transform.position.y > -3)
+            {
+                next_x = enemy.transform.position.x;
+                next_y = enemy.transform.position.y - 0.75f;
+            }
+        }
+        else if (move == EnemyMove.left)
+        {
+            if (enemy.transform.position.x > -4.34f)
+            {
+                next_x = enemy.transform.position.x - 2.5f;
+                next_y = enemy.transform.position.y;
+            }
+        }
+        else if (move == EnemyMove.right)
+        {
+            if (enemy.transform.position.x < 6.5f)
+            {
+                next_x = enemy.transform.position.x + 2.5f;
+                next_y = enemy.transform.position.y;
+            }
+
+        }
+    }
+
             //action_point -= 1;
             //Debug.Log("몬스터 끝");
             //Debug.Log(action_point);
-           
+    
+
+
+    private void Update()
+    {
+        enemy_pos = enemy.transform.position;
+
+        maxHP.transform.position = Camera.main.WorldToScreenPoint(enemy_pos + new Vector2(0.0f, 0.5f));
+        currHP.transform.position = Camera.main.WorldToScreenPoint(enemy_pos + new Vector2(0.0f, 0.5f));
+
+        SetHPBar();
     }
 
+    void FixedUpdate()
+    {
+        CastRay();
+        //마우스가 플레이어 위에 있다면 액션 창이 활성화
+        if (target == this.gameObject)
+        {
+            info.SetActive(true);
+        }
+
+        CastRay();
+        //마우스 버튼이 액션 이미지 위에서 떼어졌다면 == 액션을 취했으면 비활성화
+        if (target != this.gameObject && !Caster.is_active)
+            info.SetActive(false);
+    }
+
+    //광선을 쏴서 마우스와 충돌한 오브젝트를 판별하는 함수
+    void CastRay()
+    {
+        target = null;
+
+        Vector2 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        RaycastHit2D hit = Physics2D.Raycast(pos, Vector2.zero, 0f);
+
+        if (hit.collider != null)
+        {
+            target = hit.collider.gameObject;
+        }
+    }
+
+    private void SetHPBar()
+    {
+        currHP.GetComponent<Image>().fillAmount = enemy.Health_Point / 50f;
+    }
 }

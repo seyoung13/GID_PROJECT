@@ -37,12 +37,12 @@ public class PlayerBattle : MonoBehaviour
         if (this.gameObject.tag == "Player")
         {
             health_point = 100;
-            action_point = 5;
-            attack = 5;
+            action_point = 3;
+            attack = 10;
             defence = 5;
         }
 
-        state = StateMachine.WAITING;
+        //state = StateMachine.WAITING;
     }
 
     void FixedUpdate()

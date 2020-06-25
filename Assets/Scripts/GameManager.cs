@@ -27,8 +27,16 @@ public class GameManager : MonoBehaviour
 
         //각각 PlayerMove와 PlayerBattle 스크립트에 선언된 전역 변수로 플레이어 현재 상태 파악
         if (PlayerMove.is_engaged_enemy && !PlayerBattle.is_battled)
-            //신매니저는 유니티에서 지원하는 Scene 변경 함수
+        { 
             SceneManager.LoadScene("Stage1");
+            PlayerMove.is_engaged_enemy = false;
+            PlayerBattle.is_battled = true;
+        }
+        if (BattleManager.is_someone_died)
+        { 
+            SceneManager.LoadScene("Title");
+            BattleManager.is_someone_died = false;
+        }
     }
 
     public void PressStart()
